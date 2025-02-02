@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
-            <Link to="/" className="flex items-center">
+            <Link to="/portfolio" className="flex items-center">
               <span className="text-xl font-bold text-gray-800">
                 Kavi Raj Vedi
               </span>
@@ -25,19 +25,25 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/portfolio/about"
               className="text-gray-700 hover:text-blue-600 px-3 py-2"
             >
               About
             </Link>
             <Link
-              to="/projects"
+              to="/portfolio/cprofiles"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2"
+            >
+              Code Profiles
+            </Link>
+            <Link
+              to="/portfolio/projects"
               className="text-gray-700 hover:text-blue-600 px-3 py-2"
             >
               Projects
             </Link>
             <Link
-              to="/contact"
+              to="/portfolio/contact"
               className="text-gray-700 hover:text-blue-600 px-3 py-2"
             >
               Contact

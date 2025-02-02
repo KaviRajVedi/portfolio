@@ -1,0 +1,47 @@
+/* src/pages/CodingProfiles.css */
+
+.coding-profiles {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .coding-profiles h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .coding-profiles p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .profiles-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .profile-link span {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Hover effect: Scale up the icon & text slightly */
+  .profile-link:hover {
+    transform: scale(1.1);
+  }
+  

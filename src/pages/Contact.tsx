@@ -1,6 +1,6 @@
-import React from 'react';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -10,15 +10,20 @@ const Contact = () => {
 
     if (form.current) {
       emailjs
-        .sendForm('service_hk73vpg', 'contact_form', form.current, 'eBNaH39gI6iXOIJrq')
+        .sendForm(
+          "service_hk73vpg",
+          "contact_form",
+          form.current,
+          "eBNaH39gI6iXOIJrq"
+        )
         .then(
           (result) => {
             console.log(result.text);
-            alert('Message sent successfully!');
+            alert("Message sent successfully!");
           },
           (error) => {
             console.log(error.text);
-            alert('Failed to send message. Please try again.');
+            alert("Failed to send message. Please try again.");
           }
         );
       form.current.reset();
@@ -53,7 +58,7 @@ const Contact = () => {
             <textarea
               name="message"
               required
-              rows={6}
+              rows={12}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
           </div>

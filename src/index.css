@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Container style */
+.social-container {
+    color: aliceblue;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    align-items: center;     /* Centers icons vertically */
+    gap: 2rem;               /* Adjust the gap between icons as needed */
+    background: rgb(31 41 55 / var(--tw-bg-opacity)) /* #1f2937 */; /* Transparent background */
+  }
+  
+  /* Icon link style */
+  .social-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on icons */
+  .social-container a:hover {
+    transform: scale(1.2); /* Increases the icon size by 20% when hovered */
+  }

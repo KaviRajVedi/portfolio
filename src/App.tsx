@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-
+import Footer from "./components/Footer";
+import CodingProfiles from "./pages/cprofiles";
 function App() {
   return (
     <BrowserRouter>
@@ -12,10 +13,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/portfolio" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/cprofiles" element={<CodingProfiles />} />
         </Routes>
+
+        <Footer />
       </div>
     </BrowserRouter>
   );

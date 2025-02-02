@@ -14,10 +14,13 @@ const Home: React.FC = () => {
           I craft delightful digital experiences with passion and creativity.
         </p>
         <div className="hero-buttons">
-          <Link to="/projects" className="button">
+          <Link to="/portfolio/projects" className="button secondary">
             See My Work
           </Link>
-          <Link to="/contact" className="button secondary">
+          <Link to="/portfolio/cprofiles" className="button secondary">
+            Coding Profiles
+          </Link>
+          <Link to="/portfolio/contact" className="button secondary">
             Contact Me
           </Link>
         </div>
