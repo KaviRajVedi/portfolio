@@ -1,0 +1,131 @@
+/* src/pages/Home.css */
+
+/* Container Styles */
+.hero-container {
+    position: relative;
+    height: 100vh;
+    background: url('/path/to/your/background-image.jpg') no-repeat center center/cover;
+    /* If you prefer a gradient instead of an image, try:
+       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Overlay for Contrast */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  /* Content Styles */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  /* Title Animation */
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInDown 1s forwards;
+  }
+  
+  /* Subtitle Animation */
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Button Container */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Primary Button Style */
+  .button {
+    background-color: #fff;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+  }
+  
+  /* Secondary Button Style */
+  .button.secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .button.secondary:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Fade-In Down Animation */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-In Up Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+    .hero-buttons {
+      flex-direction: column;
+    }
+  }
+  
